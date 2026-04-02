@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <h1>Contact Me</h1>
@@ -16,47 +18,49 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="Name" required>
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Email" required>
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" name="phoneNumber" placeholder="Phone Number" required>
-            <fieldset>
-                <legend>Preferred contact</legend>
-                <label for="email">
-                    <input type="radio" name="contact" id="email">Email
-                </label>
+    <main>
+        <div>
+            <h2>Get In Touch</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email" required>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+                <fieldset>
+                    <legend>Preferred contact</legend>
+                    <label for="email">
+                        <input type="radio" name="contact" id="email">Email
+                    </label>
+                    <br>
+                    <label for="phone">
+                        <input type="radio" name="contact" id="phone">Phone
+                    </label>
+                </fieldset>
+                <label for="subject">Subject:</label>
+                <select name="subject" required>
+                    <option value="">Select an option</option>
+                    <option value="geenral">General</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="job">Potential job</option>
+                </select>
                 <br>
-                <label for="phone">
-                    <input type="radio" name="contact" id="phone">Phone
-                </label>
-            </fieldset>
-            <label for="subject">Subject:</label>
-            <select name="subject" required>
-                <option value="">Select an option</option>
-                <option value="geenral">General</option>
-                <option value="feedback">Feedback</option>
-                <option value="job">Potential job</option>
-            </select>
-            <br>
-            <label for="message">Message:</label>
-            <!-- need to remove CSS inline styling -->
-            <textarea name="message" placeholder="Message" rows="3" required style="display: block;"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    
+                <label for="message">Message:</label>
+                <!-- need to remove CSS inline styling -->
+                <textarea name="message" placeholder="Message" rows="3" required style="display: block;"></textarea>
+
+                <!-- Missing: labels, more input types, validation -->
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
     <footer class="footer">
         <p>Contact me at richardcodez23@gmail.com</p>
     </footer>
 </body>
+
 </html>
