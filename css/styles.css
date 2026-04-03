@@ -21,7 +21,7 @@ body {
     /* Missing: proper alignment */
 }
 
-/* Fix alignment using flexbox */
+/* Fixing alignment using flexbox */
 .header {
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body {
     color: orange;
 }
 
-/* Main content (ID selector requirement) */
+/* Main content */
 #main-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -184,11 +184,32 @@ label {
     margin-top: 10px;
 }
 
-/* Fieldset */
+/* Fieldset - improved radio buttons and spacing */
 fieldset {
     margin-top: 15px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Legend styling */
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Radio group layout */
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; 
+    cursor: pointer;
+}
+
+/* Radio inputs */
+fieldset input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #0077b6;
 }
 
 /* Button */
@@ -253,12 +274,6 @@ p {
     background-color: #0a192f;
     color: white;
     padding: 20px;
-    /* Wrong alignment */
-    text-align: left;
-}
-
-/* Fix alignment */
-.footer {
     text-align: center;
 }
 
