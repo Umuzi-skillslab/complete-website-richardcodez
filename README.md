@@ -61,8 +61,8 @@ The CSS focuses on simplicity and readability. I used:
 3. cd to the project directory using `cd ./little-lemon-capstone`
 4. install serve which will help serve the static website using `npm install --global serve`
 5. Execute this command `npx serve` to run the web server locally
-6. Press Ctrl button and click the link that pops up in the terminal
-7. Or copy the link from the Local and paste it in your browser tow view the website.
+6. Press Ctrl button and click the link under Local option that pops up in the terminal
+7. Or copy the link from the Local option and paste it in your browser to view the website.
 
 ## Screenshots
 
