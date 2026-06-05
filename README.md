@@ -67,17 +67,17 @@ The CSS focuses on simplicity and readability. I used:
 ## Screenshots
 
 ### Home Page
-![home page image](screenshots/homepage.jpg)
+![home page image](screenshots/homepage.png)
 ### About Page
 ![about page image](screenshots/about.jpg)
 ### Contact Page
-![contact page image](screenshots/contact.jpg)
+![contact page image](screenshots/contact.png)
 ### Projects Page
 ![projects page image](screenshots/projects.jpg)
 ### Styled Table
 ![styled table image](screenshots/table.jpg)
 ### Styled Form
-![styled form image](screenshots/form.jpg)
+![styled form image](screenshots/form.png)
 ### Styled Navigation
 ![styled navigation image with hover effect showing](screenshots/navigation.png)
 ### Before and after image of About Me Page
