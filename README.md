@@ -58,7 +58,7 @@ The CSS focuses on simplicity and readability. I used:
 
 1. Open vs code and a working directory where to clone repository into
 2. Clone the github repository using `git clone https://github.com/Umuzi-skillslab/complete-website-richardcodez` in vs code
-3. cd to the project directory using `cd ./little-lemon-capstone`
+3. cd to the project directory using `cd ./complete-website-richardcodez`
 4. install serve which will help serve the static website using `npm install --global serve`
 5. Execute this command `npx serve` to run the web server locally
 6. Press Ctrl button and click the link under Local option that pops up in the terminal
