@@ -1,0 +1,354 @@
+/* Basic styles with errors and omissions */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-size: 16px;
+    background-color: #F5F7FA;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #0A192F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+/* Navigation styling missing completely */
+
+/* Navigation */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Pseudo-classes */
+.nav a:hover {
+    color: #64FFDA;
+}
+
+.nav a:active {
+    color: orange;
+    border-bottom: 2px solid;
+}
+
+/* Hero section */
+.hero {
+    padding: 50px 20px;
+    background-color: lightblue;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #080c11;
+}
+
+.hero img {
+    width: 100%;
+    /* Missing: alt text handled in HTML, but sizing issues here */
+}
+
+/* Fix image sizing */
+.hero img {
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.hero figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.hero figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #080c11;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Missing: Only using 2-3 selector types, need 5+ */
+/* Added: element, class, ID, descendant, attribute, pseudo-class */
+
+/* Group selector */
+h2, h3 {
+    color: #0a192f;
+}
+
+/* Intro section */
+.intro h2 {
+    margin-bottom: 15px;
+    color: #0A192F;
+}
+
+.intro p {
+    color: #1f1d1d;
+}
+
+/* Box model demonstration */
+.intro {
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+/* General section styling */
+main section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+/* Images */
+section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Form */
+
+/* Form styling incomplete */
+.contact-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading */
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+    font-size: 2rem;
+}
+
+/* Form Layout */
+.contact-section form {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Labels */
+.contact-section label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs, Select and Textarea */
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Focus State */
+.contact-section input:focus,
+.contact-section select:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Radio Button Group */
+.contact-section fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 1rem;
+
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-section legend {
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.contact-section fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+}
+
+/* Radio buttons */
+.contact-section input[type="radio"] {
+    width: auto;
+}
+
+/* Textarea */
+.contact-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Button */
+.contact-section button {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .contact-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .contact-section fieldset {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Missing: Box model demonstration */
+/* Demonstrated in sections, intro, and form */
+
+/* Missing: Block vs inline elements */
+/* Demonstrated with label and nav links */
+
+/* Text styling */
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Table */
+
+/* Missing: Table styling */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #0077b6;
+    color: white;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.skills-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a192f;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #FFFFFF;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
+
+/* Code quality issues: inconsistent spacing, poor naming, no comments */
+/* Fixed: consistent structure, clear comments */
