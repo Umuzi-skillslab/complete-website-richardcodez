@@ -30,6 +30,15 @@ body {
 /* Navigation styling missing completely */
 
 /* Navigation */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
 .nav a {
     color: white;
     text-decoration: none;
