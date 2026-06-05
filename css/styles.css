@@ -1,28 +1,20 @@
 /* Basic styles with errors and omissions */
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-}
-
-/* Improve readability + background */
-body {
+    color: #222;
+    font-size: 16px;
+    background-color: #F5F7FA;
     line-height: 1.6;
-    background-color: #f5f7fa;
 }
 
 /* Header */
 .header {
-    background-color: #0a192f;
+    background-color: #0A192F;
     color: white;
     padding: 20px;
-    /* Missing: proper alignment */
-}
-
-/* Fixing alignment using flexbox */
-.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,15 +24,12 @@ body {
 .header h1 {
     margin: 0;
     font-size: 24px;
+    color: #FFFFFF;
 }
 
 /* Navigation styling missing completely */
 
 /* Navigation */
-.nav {
-    display: flex;
-}
-
 .nav a {
     color: white;
     text-decoration: none;
@@ -52,41 +41,32 @@ body {
 
 /* Pseudo-classes */
 .nav a:hover {
-    color: #64ffda;
+    color: #64FFDA;
 }
 
 .nav a:active {
     color: orange;
-}
-
-/* Main content */
-#main-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    border-bottom: 2px solid;
 }
 
 /* Hero section */
 .hero {
-    padding: 50px;
+    padding: 50px 20px;
     background-color: lightblue;
-    /* Poor colour contrast */
-}
-
-/* Improved contrast */
-.hero {
-    background: linear-gradient(to right, #0a192f, #172a45);
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     border-radius: 8px;
 }
 
 .hero h2 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
+    margin-bottom: 20px;
+    color: #080c11;
 }
 
 .hero img {
@@ -101,6 +81,21 @@ body {
     border-radius: 10px;
 }
 
+.hero figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.hero figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #080c11;
+    font-style: italic;
+    text-align: center;
+}
+
 /* Missing: Only using 2-3 selector types, need 5+ */
 /* Added: element, class, ID, descendant, attribute, pseudo-class */
 
@@ -110,8 +105,13 @@ h2, h3 {
 }
 
 /* Intro section */
-.intro {
-    padding: 30px;
+.intro h2 {
+    margin-bottom: 15px;
+    color: #0A192F;
+}
+
+.intro p {
+    color: #1f1d1d;
 }
 
 /* Box model demonstration */
@@ -145,87 +145,125 @@ section img {
 /* Form */
 
 /* Form styling incomplete */
-form input {
-    display: block;
-    margin: 10px 0;
+.contact-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Improved form styling */
-form {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    max-width: 600px;
+/* Section Heading */
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+    font-size: 2rem;
 }
 
-/* Attribute selectors */
-form input[type="text"],
-form input[type="email"],
-form select,
-form textarea {
+/* Form Layout */
+.contact-section form {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Labels */
+.contact-section label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs, Select and Textarea */
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
 }
 
-/* Focus pseudo-class */
-form input:focus,
-form textarea:focus {
-    border-color: #0077b6;
+/* Focus State */
+.contact-section input:focus,
+.contact-section select:focus,
+.contact-section textarea:focus {
     outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-/* Block vs inline */
-label {
-    display: block;
-    margin-top: 10px;
+/* Radio Button Group */
+.contact-section fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 1rem;
+
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-/* Fieldset - improved radio buttons and spacing */
-fieldset {
-    margin-top: 15px;
-    padding: 15px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
+.contact-section legend {
+    font-weight: 600;
+    padding: 0 0.5rem;
 }
 
-/* Legend styling */
-fieldset legend {
-    font-weight: bold;
-    padding: 0 5px;
-}
-
-/* Radio group layout */
-fieldset label {
-    display: inline-flex;
+.contact-section fieldset label {
+    display: flex;
     align-items: center;
-    margin-right: 20px; 
-    cursor: pointer;
+    gap: 0.5rem;
+    font-weight: normal;
 }
 
-/* Radio inputs */
-fieldset input[type="radio"] {
-    margin-right: 6px;
-    accent-color: #0077b6;
+/* Radio buttons */
+.contact-section input[type="radio"] {
+    width: auto;
+}
+
+/* Textarea */
+.contact-section textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 /* Button */
-form button {
-    background-color: #0077b6;
-    color: white;
-    padding: 12px;
+.contact-section button {
+    padding: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-/* Hover effect */
-form button:hover {
-    background-color: #023e8a;
+.contact-section button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .contact-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .contact-section fieldset {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
 }
 
 /* Missing: Box model demonstration */
@@ -272,9 +310,14 @@ p {
 /* Footer */
 .footer {
     background-color: #0a192f;
-    color: white;
+    color: #FFFFFF;
     padding: 20px;
     text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #FFFFFF;
 }
 
 /* Responsive design */

@@ -19,18 +19,24 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="contact-section">
             <h2>Get In Touch</h2>
 
             <form>
                 <label for="name">Name:</label>
-                <input type="text" name="name" placeholder="Name" id="name" required>
+                <input type="text" name="name" placeholder="Enter your name" id="name" required autocomplete="name" aria-label="Full name">
+
                 <label for="email1">Email:</label>
-                <input type="email" name="email1" placeholder="Email" id="email1" required>
+                <input type="email" name="email1" placeholder="Enter your email" id="email1" required autocomplete="email" aria-label="Email address">
+
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
-                <fieldset>
-                    <legend>Preferred contact</legend>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="e.g 0725463458"
+                        required autocomplete="tel" pattern="[0-9]{10}" title="Enter a 10 digit phone number"
+                        aria-label="Phone number"
+                >
+
+                <fieldset aria-label="Preferred contact method">
+                    <legend>Preferred contact method</legend>
                     <label for="email">
                         <input type="radio" name="contact" id="email">Email
                     </label>
@@ -38,25 +44,28 @@
                         <input type="radio" name="contact" id="phone">Phone
                     </label>
                 </fieldset>
+
                 <label for="subject">Subject:</label>
-                <select name="subject" id="subject" required>
+                <select name="subject" id="subject" required aria-label="Message subject">
                     <option value="">Select an option</option>
                     <option value="geenral">General</option>
                     <option value="feedback">Feedback</option>
                     <option value="job">Potential job</option>
                 </select>
+
                 <label for="message">Message:</label>
-                <textarea name="message" placeholder="Message" id="message" rows="3" required></textarea>
+                <textarea name="message" placeholder="Write your message here..." id="message" rows="3" required aria-label="Message content"></textarea>
 
                 <!-- Missing: labels, more input types, validation -->
 
-                <button type="submit">Send</button>
+                <button type="submit" aria-label="Send message button">Send</button>
             </form>
         </div>
     </main>
 
     <footer class="footer">
-        <p>Contact me at richardcodez23@gmail.com</p>
+        <p>Contact me at <a href="mailto:richardcodez23@gmail.com">richardcodez23@gmail.com</a></p>
+        <p>&copy;2026 Richardcodez</p>
     </footer>
 </body>
 
